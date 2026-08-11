@@ -2,7 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "lunaai2",
   "main": "index.js",
-  "compatibility_date": "2026-08-12",
+  "compatibility_date": "2026-08-11",
   "ai": {
     "binding": "AI"
   }
