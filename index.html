@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f0b16">
+  <title>Luna AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="avatar">L</div>
+      <div class="heading">
+        <h1>Luna AI</h1>
+        <p><span class="online"></span> Period support assistant</p>
+      </div>
+      <button id="clear" class="clear" aria-label="Clear chat">↻</button>
+    </header>
+
+    <div class="notice">
+      General period-support information only — Luna cannot diagnose medical conditions.
+    </div>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <div class="suggestions">
+      <button data-text="I have cramps. What can help?">Cramps</button>
+      <button data-text="What helps with period bloating?">Bloating</button>
+      <button data-text="I feel very tired during my period. What can help?">Tired</button>
+      <button data-text="What foods can help me feel better during my period?">Food</button>
+      <button data-text="I have a headache during my period. What can I do?">Headache</button>
+    </div>
+
+    <form id="form" class="composer">
+      <textarea id="input" rows="1" maxlength="1000"
+        placeholder="Message Luna..." aria-label="Message Luna"></textarea>
+      <button id="send" type="submit" aria-label="Send message">➤</button>
+    </form>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
